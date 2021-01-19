@@ -25,8 +25,8 @@ App = {
 
   initWeb3: async function() {
     // Modern dapp browsers...
-  if (window.ethereum) {
-    App.web3Provider = window.ethereum;
+    if (window.ethereum) {
+      App.web3Provider = window.ethereum;
   try {
     // Request account access
     await window.ethereum.enable();
@@ -35,26 +35,26 @@ App = {
     console.error("User denied account access")
   }
 }
-// Legacy dapp browsers...
-else if (window.web3) {
-  App.web3Provider = window.web3.currentProvider;
-}
-// If no injected web3 instance is detected, fall back to Ganache
-else {
-  App.web3Provider = new Web3.providers.HttpProvider('http://localhost:7545');
+    // Legacy dapp browsers...
+      else if (window.web3) {
+        App.web3Provider = window.web3.currentProvider;
+    }
+    // If no injected web3 instance is detected, fall back to Ganache
+      else {
+        App.web3Provider = new Web3.providers.HttpProvider('http://localhost:7545');
 }
 web3 = new Web3(App.web3Provider);
     return App.initContract();
   },
 
   initContract: function() {
-    $.getJSON('Chore.json', function(data) {
+    $.getJSON('Tasks.json', function(data) {
       // Get the necessary contract artifact file and instantiate it with @truffle/contract
-      var ChoreArtifact = data;
-      App.contracts.Chore = TruffleContract(ChoreArtifact);
+      var TasksArtifact = data;
+      App.contracts.Tasks = TruffleContract(TasksArtifact);
     
       // Set the provider for our contract
-      App.contracts.Chore.setProvider(App.web3Provider);
+      App.contracts.Tasks.setProvider(App.web3Provider);
     
       // Use our contract to retrieve and mark the adopted chores
       return App.markAccepted();
@@ -64,7 +64,7 @@ web3 = new Web3(App.web3Provider);
   },
 
   bindEvents: function() {
-    $(document).on('click', '.btn-adopt', App.handleAdopt);
+    $(document).on('click', '.btn-adopt', App.handleChore);
   },
 
   markAccepted: function() {
@@ -77,7 +77,7 @@ App.contracts.Tasks.deployed().then(function(instance) {
 }).then(function(kids) {
   for (i = 0; i < kids.length; i++) {
     if (kids[i] !== '0x0000000000000000000000000000000000000000') {
-      $('.panel-pet').eq(i).find('button').text('Success').attr('disabled', true);
+      $('.panel-chore').eq(i).find('button').text('Success').attr('disabled', true);
     }
   }
 }).catch(function(err) {
