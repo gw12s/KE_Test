@@ -1,0 +1,130 @@
+[
+  {
+    "id": 0,
+    "chore": "Sweep Floor",
+    "picture": "images/sweep.jpeg",
+    "age": "4-5",
+    "rate": "$0.50",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 1,
+    "chore": "Clean Counters",
+    "picture": "images/clean-counters.jpg",
+    "age": "4-5",
+    "rate": "$0.25",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 2,
+    "chore": "Clean Toilet",
+    "picture": "images/clean-toilet.jpg",
+    "age": "7-9",
+    "rate": "$0.50",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 3,
+    "chore": "Wash Dishes",
+    "picture": "images/dishes.jpg",
+    "age": "7+",
+    "rate": "$1.00",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 4,
+    "chore": "Dry Dishes",
+    "picture": "images/dishes.jpg",
+    "age": "7+",
+    "rate": "$1.00",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 5,
+    "chore": "Load Dishwasher",
+    "picture": "images/load-dishwasher.jpg",
+    "age": "7+",
+    "rate": "$0.50",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 6,
+    "chore": "Unload Dishwasher",
+    "picture": "images/load-dishwasher.jpg",
+    "age": "7+",
+    "rate": "$0.50",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 7,
+    "chore": "Make Bed",
+    "picture": "images/make-bed.jpg",
+    "age": "6+",
+    "rate": "$0.25",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 8,
+    "chore": "Mop Floor",
+    "picture": "images/mop.jpg",
+    "age": "10+",
+    "rate": "$1.00",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 9,
+    "chore": "Fran",
+    "picture": "images/boxer.jpeg",
+    "age": 3,
+    "rate": "Boxer",
+    "difficulty": "Matheny, Utah"
+  },
+  {
+    "id": 10,
+    "chore": "Leonor",
+    "picture": "images/boxer.jpeg",
+    "age": 2,
+    "rate": "Boxer",
+    "difficulty": "Tyhee, Indiana"
+  },
+  {
+    "id": 11,
+    "chore": "Dean",
+    "picture": "images/scottish-terrier.jpeg",
+    "age": 3,
+    "rate": "Scottish Terrier",
+    "difficulty": "Windsor, Montana"
+  },
+  {
+    "id": 12,
+    "chore": "Stevenson",
+    "picture": "images/french-bulldog.jpeg",
+    "age": 3,
+    "rate": "French Bulldog",
+    "difficulty": "Kingstowne, Nevada"
+  },
+  {
+    "id": 13,
+    "chore": "Kristina",
+    "picture": "images/golden-retriever.jpeg",
+    "age": 4,
+    "rate": "Golden Retriever",
+    "difficulty": "Sultana, Massachusetts"
+  },
+  {
+    "id": 14,
+    "chore": "Ethel",
+    "picture": "images/golden-retriever.jpeg",
+    "age": 2,
+    "rate": "Golden Retriever",
+    "difficulty": "Broadlands, Oregon"
+  },
+  {
+    "id": 15,
+    "chore": "Terry",
+    "picture": "images/golden-retriever.jpeg",
+    "age": 2,
+    "rate": "Golden Retriever",
+    "difficulty": "Dawn, Wisconsin"
+  }
+]
